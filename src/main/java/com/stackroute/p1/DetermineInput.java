@@ -14,9 +14,9 @@ public class DetermineInput {
 
     }
 
-    public static String determineInput(char c)
+    public static String determineInput(char c)                             //method body start
     {
-        if(c >='a' && c<= 'z')
+        if(c >='a' && c<= 'z')                                              //check for different type of inputs
         {
             return (c+" is a small letter");
         }
