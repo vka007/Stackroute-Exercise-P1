@@ -50,4 +50,11 @@ public class VowelConsonantTest {
         assertEquals("Vowel Consonant ",result);
     }
 
+    @Test
+    public void checkNumberSymbol()
+    {
+        String result = vc.checkVowelConsonant("12");
+        assertEquals("The input is not a letter",result);
+    }
+
 }

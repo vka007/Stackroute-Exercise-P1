@@ -45,4 +45,14 @@ public class PalindromeTest {
         assertEquals("The No is not pallindrome",result);
 
     }
+
+    @Test
+    public void getANumberAndCheckValidInput(){
+
+        String result = pal.checkPallindrome(-1298765);
+        assertEquals("Invalid input.Enter positive number",result);
+
+    }
+
+    
 }

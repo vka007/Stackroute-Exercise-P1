@@ -14,6 +14,8 @@ public class VowelConsonant {
         // char wordarr[]  = word.toCharArray();
 
         String result = checkVowelConsonant(word);
+
+        System.out.println(result);
     }
 
     public static String checkVowelConsonant(String word){

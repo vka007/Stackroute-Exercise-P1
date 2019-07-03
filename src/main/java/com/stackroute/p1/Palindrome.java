@@ -19,6 +19,11 @@ public class Palindrome {
 
     public static String checkPallindrome(long n)
     {
+        if(n<0)
+        {
+            return "Invalid input.Enter positive number";
+        }
+        
         long test;
         int i = 0;
         double tot = 0;

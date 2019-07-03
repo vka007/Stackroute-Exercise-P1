@@ -28,16 +28,25 @@ public class IntegerCheckTest {
         String result = chk.intCheck(25);
         assertEquals("Tom",result);
     }
+
+    @Test
     public void getANumberAndCheckIfItIsBetween20And30AndCheckIfItIsEven() {
 
         String result = chk.intCheck(22);
         assertEquals("Jerry",result);
     }
+    @Test
     public void getANumberAndCheckIfItIsNotBetween20And30() {
 
         String result = chk.intCheck(32);
-        assertEquals(" ",result);
+        assertEquals("Invalid input.Enter integer\n",result);
     }
 
+    @Test
+    public void getANumberAndCheckInvalidinput() {
+
+        String result = chk.intCheck(32);
+        assertEquals("Invalid input.Enter integer\n",result);
+    }
 
 }
