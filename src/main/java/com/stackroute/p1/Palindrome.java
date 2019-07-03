@@ -21,7 +21,7 @@ public class Palindrome {
     {
         if(n<0)
         {
-            return "Invalid input.Enter positive number";
+            return "Invalid input.Enter positive number";       //check for invalid inputs
         }
         
         long test;
@@ -29,28 +29,22 @@ public class Palindrome {
         double tot = 0;
         test = n;
 
-        long arr1[] = new long[100];
+        long arr1[] = new long[100];                        //long array created
 
-        while (test != 0) {
+        while (test != 0) {                                 //loop to reverse the integer 
             arr1[i] = test % 10;
             test = test / 10;
             i++;
         }
 
-        //System.out.println(i);
-
-        for (int j=0; j< i-1; j++)
+        for (int j=0; j< i-1; j++)                                      //loop to calculate the power 
         {
             tot = tot + (arr1[j] * (int)(Math.pow(10, i-j-1)));
         }
 
-        tot = tot + arr1[i-1];
+        tot = tot + arr1[i-1];                                      //calculate total 
 
-       // System.out.println((int)tot);
-
-
-
-        if ((int)tot == n)
+        if ((int)tot == n)                                          //check for total and input number to determine pallindrome
         {
             tot = 0;
 
@@ -58,9 +52,7 @@ public class Palindrome {
                 tot = tot + arr1[j];
             }
 
-            // System.out.println(tot);
-
-            if (tot >= 25.0) {
+            if (tot >= 25.0) {                                  //check sum and return app. message
               //  tot = 0; i=0;
                 return "The No is pallindrome and its sum of its digit is greater than 25";
             } else {
