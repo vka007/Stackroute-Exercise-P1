@@ -11,15 +11,15 @@ public class GuessNumber {
 
     }
 
-    public static void guessTheNumber() {
-        Scanner sc = new Scanner(System.in);
-        Random rand = new Random();
-        int randomNumber = rand.nextInt(100) + 1;
+    public static void guessTheNumber() {                           //method body
+        Scanner sc = new Scanner(System.in);                        
+        Random rand = new Random();                                 //initiate rand function
+        int randomNumber = rand.nextInt(100) + 1;                   //generate rand number
         int yourGuess;
         do {
-            System.out.println("Guess a number from 1-100");
+            System.out.println("Guess a number from 1-100");            //start guessing
             yourGuess = sc.nextInt();
-            if(yourGuess>randomNumber){
+            if(yourGuess>randomNumber){                                    //loop to generate and guess and match values
                 System.out.println("Number guessed is more than original number");
             }
 
